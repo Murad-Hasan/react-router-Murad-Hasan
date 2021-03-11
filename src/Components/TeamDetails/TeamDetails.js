@@ -30,7 +30,7 @@ const TeamDetails = () => {
     strSport,
     strGender,
     strTeamBadge,
-    strTeamBanner,
+    strStadiumThumb,
     strDescriptionEN,
     strStadiumDescription,
     strYoutube,
@@ -41,7 +41,10 @@ const TeamDetails = () => {
   return (
     <section id="team-details">
       <div>
-        <img id="overlay" className="team-banner " src={strTeamBanner} alt="" />
+        <img className="team-banner " src={strStadiumThumb} alt="" />
+        <div className = "team-logo">
+          <img  width={"200px"} src={strTeamBadge} alt="" />
+        </div>
       </div>
       <div className="team-info">
         <div>
@@ -60,10 +63,7 @@ const TeamDetails = () => {
             <FontAwesomeIcon icon={faMars} /> Gender: {strGender}
           </h6>
         </div>
-        <div>
-          <h3 className="text-center text-danger">Logo</h3>{" "}
-          <img width={"200px"} src={strTeamBadge} alt="" />
-        </div>
+        
         <div>
           <h3 className="text-center text-danger">Team Photo</h3>
 
@@ -79,10 +79,10 @@ const TeamDetails = () => {
         <p>{strStadiumDescription}</p>
       </div>
       <div className="text-center social-link">
-        <a target={"_blank"} rel="noreferrer" href={`https://${strYoutube}`}>
+        <a target={"_blank"} rel="noreferrer" href={`https://${strFacebook}`}>
           <FontAwesomeIcon className="ml-3" icon={["fab", "facebook"]} />
         </a>
-        <a target={"_blank"} rel="noreferrer" href={`https://${strFacebook}`}>
+        <a target={"_blank"} rel="noreferrer" href={`https://${strYoutube}`}>
           <FontAwesomeIcon className="ml-3 " icon={["fab", "youtube"]} />
         </a>
         <a target={"_blank"} rel="noreferrer" href={`https://${strTwitter}`}>
