@@ -1,0 +1,39 @@
+
+.cart{
+    float: left;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background: rgb(191, 190, 190);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.624);
+    border-radius: 7px;
+}
+.cart:hover{
+    background: rgb(111, 107, 107);
+}
+.cart:focus-within{
+    background: rgb(11, 135, 192);
+}
+@media screen and (max-width: 770px) {
+    .cart{
+        float: left;
+        width: 45%;
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid red;
+        backdrop-filter: blur(3px);
+    }
+  }
+@media screen and (max-width: 495px) {
+    .cart{
+        float: left;
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid red;
+        backdrop-filter: blur(3px);
+    }
+  }

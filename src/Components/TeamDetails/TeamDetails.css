@@ -1,0 +1,97 @@
+section{
+    background: rgb(77, 77, 209);
+}
+.team-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+    border: 1px solid red;
+    width: 70vw;
+    height: 40vh;
+    background: rgb(216, 97, 53);
+    border-radius: 10px;
+}
+.team-info:hover{
+    background: rgb(247, 193, 173);
+}
+.team-info img{
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+}
+.team-banner{
+    width: 100%;
+}
+
+.social-link>a{
+    font-size: 30px;
+}
+.social-link>a:nth-child(1){
+    color : rgb(4, 4, 89);
+}
+.social-link>a:nth-child(1):hover{
+    color : rgb(12, 12, 204);
+}
+.social-link>a:nth-child(2){
+    color: rgb(225, 13, 13);
+}
+.social-link>a:nth-child(2):hover{
+    color: rgb(104, 5, 5);
+}
+
+@media screen and (max-width:1250px){
+    .team-info{
+        width: 80vw;
+    }
+}
+@media screen and (max-width:1111px){
+    .team-info{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .team-info{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 50vw;
+        height: auto;
+    }
+}
+@media screen and (max-width:625px){
+    .team-info{
+        width: 70vw;
+        align-items: center;
+    }
+}
+@media screen and (max-width:385px){
+    .team-info{
+        width: 98vw;
+        align-items: center;
+    }
+    .team-info img{
+        height: 150px;
+        width: 200px;
+        object-fit: contain;
+    }
+
+}
+
+@media screen and (max-width:435px){
+    .team-info{
+        width: 80vw;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:325px){
+    .team-info img{
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+    }
+}
