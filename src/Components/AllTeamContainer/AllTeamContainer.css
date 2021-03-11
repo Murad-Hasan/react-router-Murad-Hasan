@@ -10,11 +10,9 @@
     border-radius: 7px;
 }
 .cart:hover{
-    background: rgb(111, 107, 107);
-}
-.cart:focus-within{
     background: rgb(11, 135, 192);
 }
+
 @media screen and (max-width: 770px) {
     .cart{
         float: left;
